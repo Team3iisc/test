@@ -1,0 +1,12 @@
+Steps:
+
+1. cd to root directory
+
+2. install 3rd party software splash by command
+    mvn install:install-file -Dfile=./lib/splash-0.2.0.jar -DgroupId=org.apache.spark -DartifactId=splash -Dversion=0.2.0 -Dpackaging=jar
+
+3. mvn clean compile package
+
+4. use jar with dependencies in target file to run spark jobs
+
+check scripts for usage
