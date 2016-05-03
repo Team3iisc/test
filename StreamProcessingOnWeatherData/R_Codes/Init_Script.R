@@ -1,0 +1,8 @@
+library(fpp)
+temp <- scan(file = filepath)
+n <- length(temp)
+t <- ts(temp, start=0, deltat = 1)
+train <- window(t, end=end1)
+test <- window(t, start=start1)
+fit <- auto.arima(train)
+order <- arimaorder(fit)
